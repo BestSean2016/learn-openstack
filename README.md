@@ -1,2 +1,0 @@
-# learn-openstack
-learn-openstack

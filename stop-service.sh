@@ -2,80 +2,79 @@
 
 stopServices() {
 
-
 	# systemctl stop qemu-guest-agent.service
-	echo "neutron-metadata-agent.service    "
+	echo "stop neutron-metadata-agent.service    "
 	systemctl stop neutron-metadata-agent.service
-	echo "neutron-linuxbridge-agent.service "
+	echo "stop neutron-linuxbridge-agent.service "
 	systemctl stop neutron-linuxbridge-agent.service
-	echo "neutron-l3-agent.service          "
+	echo "stop neutron-l3-agent.service          "
 	systemctl stop neutron-l3-agent.service
-	echo "neutron-dhcp-agent.service        "
+	echo "stop neutron-dhcp-agent.service        "
 	systemctl stop neutron-dhcp-agent.service
-	echo "neutron-server.service            "
+	echo "stop neutron-server.service            "
 	systemctl stop neutron-server.service
-	echo "openstack-nova-compute.service    "
+	echo "stop openstack-nova-compute.service    "
 	systemctl stop openstack-nova-compute.service
-	echo "openstack-nova-scheduler.service  "
+	echo "stop openstack-nova-scheduler.service  "
 	systemctl stop openstack-nova-scheduler.service
-	echo "openstack-nova-novncproxy.service "
-	systemctl stop openstack-nova-novncproxy.service
-	echo "openstack-nova-consoleauth.service"
+	# echo "stop openstack-nova-novncproxy.service "
+	# systemctl stop openstack-nova-novncproxy.service
+	echo "stop openstack-nova-consoleauth.service"
 	systemctl stop openstack-nova-consoleauth.service
-	echo "openstack-nova-conductor.service  "
+	echo "stop openstack-nova-conductor.service  "
 	systemctl stop openstack-nova-conductor.service
-	echo "openstack-nova-cert.service       "
+	echo "stop openstack-nova-cert.service       "
 
 	systemctl stop openstack-nova-cert.service
-	echo "openstack-nova-api.service        "
+	echo "stop openstack-nova-api.service        "
 	systemctl stop openstack-nova-api.service
-	echo "openstack-glance-registry.service "
+	echo "stop openstack-glance-registry.service "
 	systemctl stop openstack-glance-registry.service
-	echo "openstack-glance-api.service      "
+	echo "stop openstack-glance-api.service      "
 	systemctl stop openstack-glance-api.service
-	echo "netcf-transaction.service         "
+	echo "stop netcf-transaction.service         "
 	systemctl stop netcf-transaction.service
-	echo "multipathd.service                "
+	echo "stop multipathd.service                "
 	systemctl stop multipathd.service
-	echo "mongod.service                    "
+	echo "stop mongod.service                    "
 	systemctl stop mongod.service
-	echo "ModemManager.service              "
+	echo "stop ModemManager.service              "
 	systemctl stop ModemManager.service
-	echo "memcached.service                 "
+	echo "stop memcached.service                 "
 	systemctl stop memcached.service
-	echo "mdmonitor.service                 "
+	echo "stop mdmonitor.service                 "
 	systemctl stop mdmonitor.service
-	echo "mariadb.service                   "
+	echo "stop mariadb.service                   "
 	systemctl stop mariadb.service
-	echo "libvirtd.service                  "
+	echo "stop libvirtd.service                  "
 	systemctl stop libvirtd.service
-	echo "libstoragemgmt.service            "
+	echo "stop libstoragemgmt.service            "
 	systemctl stop libstoragemgmt.service
-	echo "ksmtuned.service                  "
+	echo "stop ksmtuned.service                  "
 	systemctl stop ksmtuned.service
-	echo "ksm.service                       "
+	echo "stop ksm.service                       "
 	systemctl stop ksm.service
-	echo "iscsi.service                     "
+	echo "stop iscsi.service                     "
 	systemctl stop iscsi.service
-	echo "ipmievd.service                   "
+	echo "stop ipmievd.service                   "
 	systemctl stop ipmievd.service
-	echo "hypervvssd.service                "
+	echo "stop hypervvssd.service                "
 
 
 	systemctl stop hypervvssd.service
-	echo "hypervkvpd.service                "
+	echo "stop hypervkvpd.service                "
 	systemctl stop hypervkvpd.service
-	echo "httpd.service                     "
+	echo "stop httpd.service                     "
 	systemctl stop httpd.service
-	echo "rabbitmq-server.service           "
+	echo "stop rabbitmq-server.service           "
 	systemctl stop rabbitmq-server.service
-	# echo "getty@.service                    "
+	# echo "stop getty@.service                    "
 	# systemctl stop getty@.service
-	echo "gdm.socket                        "
+	echo "stop gdm.socket                        "
 	systemctl stop gdm.socket
-	echo "gdm.service                       "
+	echo "stop gdm.service                       "
 	systemctl stop gdm.service
-	echo "dmraid-activation.service         "
+	echo "stop dmraid-activation.service         "
 	systemctl stop dmraid-activation.service
 
 	# systemctl stop display-manager.service
@@ -86,61 +85,63 @@ stopServices() {
 	# systemctl enable dbus-org.freedesktop.ModemManager1.service
 	# systemctl enable dbus-org.bluez.service
 
-	echo "nfs-client.target       "
+	echo "stop nfs-client.target       "
 	systemctl stop nfs-client.target
-	echo "rpcbind.socket          "
+	echo "stop rpcbind.socket          "
 	systemctl stop rpcbind.socket
-	echo "iscsiuio.socket         "
+	echo "stop iscsiuio.socket         "
 	systemctl stop iscsiuio.socket
-	echo "iscsid.socket           "
+	echo "stop iscsid.socket           "
 	systemctl stop iscsid.socket
-	echo "vmtoolsd.service        "
+	echo "stop vmtoolsd.service        "
 	systemctl stop vmtoolsd.service
-	echo "sysstat.service         "
+	echo "stop sysstat.service         "
 	systemctl stop sysstat.service
-	echo "spice-vdagentd.service  "
+	echo "stop spice-vdagentd.service  "
 	systemctl stop spice-vdagentd.service
-	echo "smartd.service          "
+	echo "stop smartd.service          "
 	systemctl stop smartd.service
-	echo "rtkit-daemon.service    "
+	echo "stop rtkit-daemon.service    "
 	systemctl stop rtkit-daemon.service
-	echo "rngd.service            "
+	echo "stop rngd.service            "
 	systemctl stop rngd.service
-	echo "cups.service            "
+	echo "stop cups.service            "
 	systemctl stop cups.service
-	echo "cups.socket             "
+	echo "stop cups.socket             "
 	systemctl stop cups.socket
-	echo "chronyd.service         "
+	echo "stop chronyd.service         "
 	systemctl stop chronyd.service
-	echo "bluetooth.service       "
+	echo "stop bluetooth.service       "
 	systemctl stop bluetooth.service
-	echo "atd.service             "
+	echo "stop atd.service             "
 	systemctl stop atd.service
-	echo "accounts-daemon.service "
+	echo "stop accounts-daemon.service "
 	systemctl stop accounts-daemon.service
-	echo "abrt-xorg.service       "
+	echo "stop abrt-xorg.service       "
 	systemctl stop abrt-xorg.service
-	echo "abrt-vmcore.service     "
+	echo "stop abrt-vmcore.service     "
 	systemctl stop abrt-vmcore.service
-	echo "abrt-oops.service       "
+	echo "stop abrt-oops.service       "
 	systemctl stop abrt-oops.service
-	echo "abrt-ccpp.service       "
+	echo "stop abrt-ccpp.service       "
 	systemctl stop abrt-ccpp.service
-	echo "abrtd.service           "
+	echo "stop abrtd.service           "
 	systemctl stop abrtd.service
-	echo "cups.path               "
+	echo "stop cups.path               "
 	systemctl stop cups.path
-	echo "auditd.service          "
+	echo "stop auditd.service          "
 	systemctl stop auditd.service
 
 }
 
-echo "Please Enter Your Name: "
+
+echo "Please Enter Your Name:"
 read name
-echo "Hello $name, Are you SURE all instances was shutdown?[yes/n]"
-read sure
-if [ "$sure" = "yes" ]
+echo "Hello $name, Are You SURE all instance was stopped? [yes/n]"
+read stopped
+
+if [ "$stopped" == "yes" ]
 then
-    stopServices
+	stopServices
 fi
 
